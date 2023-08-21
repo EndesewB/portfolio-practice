@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  color: #333;
+  background-image: url('https://unbanked.com/wp-content/uploads/2020/06/2505081.jpg'); /* Updated background image URL */
+  background-size: cover;
+  margin: 0;
+  animation: slideBackground 60s linear infinite; /* Apply animation to slide the background */
+}
+header {
+  background-color: #52d46e;
+  padding: 5px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #e60b78;
+  margin: 0;
+}
+
+/* Navigation styling */
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.navigation li {
+  margin-right: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+/* Hover effect */
+.navigation a:hover {
+  /*background-color: #fff; /* Change to desired background color on hover */
+  transform: translateY(-3px); /* Move the link upwards by 3px on hover */
+  color: #333; /* Change to desired text color on hover */
+}
+
+/* Section styling */
+section {
+  padding: 50px;
+  color: #dce3e6; /* Updated text color */
+  display: none; /* Hide sections by default */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form input, form button {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+form button {
+  background-color: #095e25;
+  color: #dce3e6;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dashboard buttons styling */
+.dashboard-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dashboard-buttons button {
+  margin: 10px;
+  padding: 10px 10px;
+  background-color: #333;
+  color: #fff;
+  border: aqua;
+  cursor: pointer;
+}
+
+/* Footer styling */
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #128ddf;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Parallax layer styling */
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  animation: parallaxBackground 60s linear infinite;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0% 0%; /* Initial background position */
+  }
+  100% {
+    background-position: 100% 100%; /* Final background position */
+  }
+}
