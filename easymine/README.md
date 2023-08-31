@@ -1,1 +1,1 @@
-Easymine project comming soon
+Easymine project (Week 2): MVP Complete
